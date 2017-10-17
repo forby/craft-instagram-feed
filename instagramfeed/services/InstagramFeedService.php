@@ -35,7 +35,8 @@ class InstagramFeedService extends BaseApplicationComponent
 				'link' => $row->link,
 				'likes' => $row->likes->count,
 				'comments' => $row->comments->count,
-				'caption' => ($row->caption) ? $row->caption->text : $row->caption
+				'caption' => ($row->caption) ? $row->caption->text : $row->caption,
+				'type' => $row->type
 			);
 		}
 
